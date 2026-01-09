@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials - Car Rental Uganda</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 999;
+        }
+
+       /* Header */
+       header {
+        background-color: black;
+        color: white;
+        padding: 10px 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+    }
+
+    header .logo h1 {
+        margin-left: 20px;
+        font-size: 1.5em;
+        color: white;
+    }
+
+    header nav ul {
+        list-style: none;
+        display: flex;
+        gap: 10px;
+        margin-right: 15px;
+    }
+
+    header nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: normal;
+        padding: 10px 15px;
+        border-radius: 5px;
+    }
+
+    header nav ul li a:hover {
+        background-color: red;
+    }
+
+    header nav ul li a.active {
+        background-color: rgb(68, 0, 255);
+    }
+
+
+        /* Hero Section */
+        .hero {
+            background: url('images/clearoff3.jpeg')  center/cover;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: red;
+        }
+
+        .hero-text h2 {
+            font-size: 3em;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+            background: -moz-linear-gradient(to bottom,red,blue);
+        }
+
+        /* Testimonials Section */
+        .testimonials-section {
+            padding: 50px 20px;
+            text-align: center;
+            border-radius: 20px;
+        }
+
+        .testimonials-section h3 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+        }
+
+        .testimonial {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 10px auto;
+        }
+
+        .testimonial-photo {
+            margin-right: 20px;
+        }
+
+        .testimonial-photo img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .testimonial-text {
+            flex-grow: 1;
+        }
+
+        .testimonial p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .client-name {
+            font-weight: bold;
+            font-style: italic;
+            color: #555;
+            text-align: right;
+            margin-top: 10px;
+        }
+
+        /* Chat Button */
+        .chat {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .chat a {
+            background-color: #25D366;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .chat a:hover {
+            background-color: #1ebd50;
+        }
+
+        /* Footer */
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        footer ul li {
+            margin: 0 15px;
+        }
+
+        footer ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Car Rental Uganda</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="fleet.html">Fleet</a></li>
+                <li><a href="faq_blog.html">FAQ & Blog</a></li>
+                <li><a href="testimonials.html" class="active">Testimonials</a></li>
+                <li><a href="booking.html">Bookings</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-text">
+            <h2>Customer Testimonials</h2>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <div class="testimonials-section">
+        <h3>What Our Clients Say</h3>
+
+        <!-- Testimonial 1 -->
+        <div class="testimonial">
+            <div class="testimonial-photo">
+                <img src="images/test2.jpeg" alt="Jane Doe">
+            </div>
+            <div class="testimonial-text">
+                <p>"Car Rental Uganda made my trip to Queen Elizabeth unforgettable! The car was in perfect condition, and the service was impeccable. I highly recommend them!"</p>
+                <p class="client-name">- Gidudu Doe, Tourist</p>
+            </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial">
+            <div class="testimonial-photo">
+                <img src="images/test1.webp" alt="John Smith">
+            </div>
+            <div class="testimonial-text">
+                <p>"The booking process was easy, and the staff was very friendly. I felt safe and comfortable driving around with their rental car. Will definitely use their services again!"</p>
+                <p class="client-name">- Bobi Wine, Business Traveler</p>
+            </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial">
+            <div class="testimonial-photo">
+                <img src="images/test3.jpeg" alt="Mary Johnson">
+            </div>
+            <div class="testimonial-text">
+                <p>"Excellent service, great cars, and easy booking. Everything was seamless and hassle-free. I’ll be returning for my next visit to Uganda!"</p>
+                <p class="client-name">- Mary Johnson, Holiday Traveler</p>
+            </div>
+        </div>
+
+        <!-- Testimonial 4 -->
+        <div class="testimonial">
+            <div class="testimonial-photo">
+                <img src="images/test4.jpeg" alt="Michael Brown">
+            </div>
+            <div class="testimonial-text">
+                <p>"A very professional and customer-oriented company. The team at Car Rental Uganda went above and beyond to ensure we had everything we needed during our safari."</p>
+                <p class="client-name">- Michael Brown, Safari Explorer</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chat Button -->
+    <div class="chat">
+        <a href="https://wa.me/256779025158" target="_blank">Chat with Us</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Car Rental Uganda | All Rights Reserved</p>
+        <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
